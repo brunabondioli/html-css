@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<h1>Inserindo vídeos hospedados localmente</h1>
+<body>
+<p>
+    Vídeos são uma mídia extremamente comum em sites, mas precisamos ficar atentos para usarmos esse tipo de mídia de maneira eficiente, sem que prejudique o carregamento do nosso site ou exija pagamento extra por armazenamento em hospedagens. Arquivos acima de 1080 p, não devem ser armazenados dentro do próprio site! <br>
+    Para encontrar bons vídeos com direitos autorais de livre acesso, acesse o "Pexels". Na hora de baixar, escolha um arquivo de tamanho razoável. <br>
+    Tamanhos razoáveis: mp4, m4v, webm (qualidade ruim) e arquivos ogv. Como nos áudios, é interessante que tenhamos o mesmo arquivo em diferentes extensões. <br>
+    O site "HandBrake" é uma ótima opção para converter arquivos de vídeo. Você também encontra outros conversores em sites on-line.
+</p>
+<p>
+    Para inserir vídeos no seu site, primeiro, pense em uma thumnail para seu vídeo. Você pode criá-la no Gimp. <br>
+    <strong>CUIDADO:</strong> Sua thumbnail deve estar na mesma orientação e enquadramento do seu vídeo (retrato/paisagem).
+</p>
+<p>
+    Este vídeo está hospedado no meu próprio servidor. 
+</p>
+<video src="media/meu-video-original.mp4.mp4" width="560" controls muted autoplay></video>
+<p>
+    Para inserir vídeos, abra a tag &lt;video&gt;. Dentro da tag, escreva os parâmetros "width" e digite um valor razoável; "posters" e seleciona o arquivo thumbnail; e complete com o parâmetro "controls". <br>
+    Caso você queira que o vídeo tenha "autoplay", digite depois de "controls" "muted autoplay".
+    Abra uma tag &lt;source&gt;; complete com os parâmetros "src=", onde você selecionará o vídeo desejado; e complete com o prâmetro "type=" onde você digitará o tipo de mídia (mp4 ou m4v = video/mp4, webm = video/webm, ogv = video/ogv). <br>
+    Lembre-se de colocar todos as extensões do mesmo vídeo. Para isso, abra uma tag &lt;video&gt; controls; dentro dela, abra tags &lt;source src= type=&gt;. <br>
+    A tag &lt;video&gt; sempre deve estar dentro de uma tag &lt;p&gt;, caso contrário o texto dentro da tag do vídeo, não aparecerá!
+</p>
+<p>
+    <video width="560" poster="imagens/thumbnail.png" controls loop>
+    <source src="media/meu-video-1850.mp4.mp4" type="video/mp4">
+    <source src="media/meu-video-626.mp4.mp4" type="video/mp4">
+    <source src="media/meu-video-original.mp4.mp4" type="video/mp4">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+</p>
+<p>
+    Essa maneira de inserir vídeos em sites,  vai gerar um alto consumo de banda larga para o seu cliente, acarretando em custo maior para o seu cliente. Se ele exigir que os vídeos sejam hospedados no próprio servidor do site, avise-o sobre impactos financeiros.
+</p>
+<h1>Inserindo vídeos do YoutTube</h1>
+<p>
+    Para inserir vídeos do YouTube (ou seja, se outro servidor, o que gerará custos menores), clique em "compartilhar" abaixo do vídeo e depois em "incorporar". Essa opção abrirá um tag para você incorporar no seu HTML!
+</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DzZZqPygelA?si=aSMbD7bZQa1806PV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>
+    Para vídeos que possam ser públicos, upe o vídeo que você queira incorporar no seu site no YouTube e depois siga a orientação acima. 
+</p>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+        <h2>Negrito/Destaque</h2>
+            <p>
+                Nessa frase temos um <b>termo em negrito</b> usando a tag "b" (não semântica).
+            </p>
+            <p>
+                Nesta frase, tenho um <strong>termo em destaque</strong>. Além da forma, a tag "strong" dá um sentido. Qual? O professor ainda não falou. 
+            </p>
+        <h2>Itálico/Ênfase</h2>
+            <p>
+                Nesta frase, <i>temos um termo em Itálico</i> usando a tag "i" (não semântica). 
+            </p>
+            <p>
+                Nesta frase temos um <em>termo em ênfase</em> usando a tag "em" (semântica).
+            </p>
+            <p>
+                Para envelopar termos, pressione ctrl + shift + p; digite abb e selecione "Wrap with abbreviation"; em seguida, digite a tag que você quer usar e depois dê enter.
+            </p>
+            <p>
+                Podemos criar também <mark>um texto marcado</mark> usando a tag "mark". Não conseguimos mudar a cor da marcação em HTML porque cor está relacionada com forma (CSS). Para usar essa CSS, digitar na frente de "mark", "style=", dar ctrl + espaço e buscar "background color"! 
+            </p>
+            <p>
+                Entretanto, se você quiser <mark>marcar outros trechos do texto com a mesma cor diferente</mark> da cor padrão (amarelo), crie a tag "&lt;style&gt; logo após a linha da tag "title". Dentro da tag "style", na linha abaixo, digite "mark{}" e selecione a opção "background color". 
+            </p>
+        <h2>Texto grande e pequeno</h2>
+            <p>
+                Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.<br>
+                A tag "small" ainda não caiu devido às "letras pequenas", de contrátos, por exemplo. Há um sentido em haver letras pequenas. Diferente de letras grandes que é puramente estilo/forma. 
+            </p>
+        <h2>Texto deletado</h2>
+            <p>
+                Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser sido, mas não considerado, usando a tag &lt;del&gt;.
+            </p>
+        <h2>Texto inserido</h2>
+            <p>
+                Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois. Para isso, use a tag &lt;ins&gt;.
+            </p>
+        <p>
+            Existe também o <u>sublinhado</u> com a tag "u" (não semântica).   
+        </p>
+        <p>
+            Lembrando que visualmente, não há diferença, mas existe a diferença de sentido (html5) e estilo/forma.
+        </p>
+    <h2>Texto sobrescrito</h2>
+        <p>
+            Para inserir coisas do tipo x<sup>2</sup>+3
+        </p>
+    <h2>Texto subescrito</h2>
+        <p>
+            Para inserir coisas do tipo H<sub>2</sub>O.
+        </p>
+        <p>Vamos testar: <br>
+            6<sup>o</sup> ano <br>
+            7<sup>o</sup> ano <br>
+            8<sup>o</sup> ano <br>
+            9<sup>o</sup> ano <br>
+            Eu <strong>odeio</strong> ser professora de <em>ensino fundamental 2</em>. <br>
+            Simplesmente porque não tenho 1 minuto de <mark style="background-color: rgb(145, 217, 241);">paz</mark>.
+        </p>
+</body>
+</html>

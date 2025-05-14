@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+<h1 id="principal">Criando Sites com HTML</h1> 
+<h1>Seletores Personalizados (usando estilos diferentes para o textos dentro de tags do mesmo tipo)</h1>
+<h2 id="right1">Identificando/diferenciando tags</h2>
+<p>
+    Para diferenciar (ou mais corretamente dizendo, idetificar) tags, escreva dentro das chaves angulares, após a letra ou palavra que forma a tag "id=". Em seguida, digite sua identificação; nesse exemplo "principal" (ver código tag h1). Por fim, vá até o arquivo das CSS, e após as linhas genéricas da tag em questão, digite "h1#principal" (nometag#identificaçãotag) e digite os estilos que você pretende aplicar apenas para aquela tag. <br>
+    Dicas: HTML é id, CSS é #. HTML é class, CSS é . !
+</p>
+<h2>"Ids" Repetidos</h2>
+<p>
+    Não é correto batizar mais do que uma tag com o mesmo nome. Ou seja, se eu já identifiquei uma tag "h1" como "id="pricipal"", eu não posso usar essa mesma idetificação em outras tags.  <!--ops, tinha acabado de fazer isso--> Ao invés de "id", nesse caso, recomenda-se utilizar "class".
+</p>
+<h2>Escolhendo nomes de "ids" e "classes"</h2>
+<p>
+    Sempre que for escolher uma identificação ou nome para suas tags em id ou class, pense na funcionalidade, não na forma. Veja nos parágrafos abaixo.
+</p>
+<h1 class="main">Aprendendo HTML</h1>
+<h2 class="basico">HTML básico</h2>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsum distinctio nisi quisquam dolores quod velit id! Temporibus eaque minus non cum ab nihil natus. Dolorum voluptatem quis doloribus provident.
+</p>
+<h2 class="inter">HTML intermediário</h2>
+<p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit aspernatur laboriosam aliquid cupiditate, quibusdam porro rem eius excepturi animi assumenda perspiciatis eligendi vero pariatur reiciendis similique atque? Ducimus, harum ullam!
+</p>
+<h2 class="avancado">HTML avançado</h2>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis neque repellat deserunt impedit sit fugit nemo illo nostrum officiis alias porro natus aliquid quae enim qui, vero repudiandae deleniti eos.
+</p>
+<h1 class="main">Aprendendo CSS</h1>
+<h2 class="basico">CSS básico</h2>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit hic consequatur reiciendis deleniti nobis fugit esse, veritatis facilis dicta sint voluptatibus ex fugiat aspernatur tenetur quam praesentium molestias ullam accusamus.
+</p>
+<h2 class="inter">CSS intermediário</h2>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ab incidunt numquam atque magnam maxime. Perferendis voluptatem neque ducimus assumenda debitis, tempore nisi suscipit iusto minus, adipisci dolore ratione expedita?
+</p>
+<h2 class="avancado">CSS avançado</h2>
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, est alias corporis placeat eligendi perferendis perspiciatis, obcaecati cum labore dolorem dolorum voluptates repellendus? Molestiae aperiam accusamus omnis ad, at odio.
+</p>
+<h1>Usando classes no corpo do texto</h1>
+<p>
+    Podemos modificar partes do corpo do texto com as características das classes que criamos. Veja só esse trecho com as características da classe "avaçado": <span class="avancado">"isso é apenas um exemplo!".</span> Para isso, basta colocar o trecho do texto entre tags &lt;span&gt; seguida do estilo "class" e sua idetificação.
+</p>
+<p>
+    É importante ressaltar que no documento CSS, devemos registrar a class apenas com ".nomedaclasse" (Veja no documento).
+</p>
+</body>
+</html>

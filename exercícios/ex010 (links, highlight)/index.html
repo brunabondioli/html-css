@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+    <h1>Usando links externos</h1>
+<body>
+    <p>
+        Para colocar links no seu site, use a tag &lt;a&gt;. Dentro da tag, aparecerá o parâmetro "href=". Entre as aspas desse parâmetro, cole o endereço completo do site. <br>
+        Ao clicar no link, na página pronta, o novo site se sobreporá ao site inicial. Veja:
+    </p>
+    <p>
+        Você pode acessar o meu <a href="https://gustavoguanabara.github.io/">repositório público no GitHub!</a></p>
+    <p>
+        É recomendado que links de outros sites (externos) sejam abertos em outra guia. Para isso, dentro da tag &lt;a&gt;, APÓS o endereço no site, digite o parâmetro "target=" e digite "_blank" dentro das aspas e o parâmetro "rel=" e digite "external" dentro das aspas. <br>
+        Basicamente esses parâmetros significam que o link é externo e que deve abrir em uma nova guia.
+    </p>
+    <p>
+        Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube.</a>
+    </p>
+    <h1>Mais práticas de links</h1>
+    As rede sociais mais utilizadas no Brasil são:
+        <ul>
+            <li><a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank" rel="external"><mark style="background-color: chartreuse;">WhatsApp</mark></mark></a>
+            </li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="external"><mark style="background-color: deeppink;">Instagram</mark></mark></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="external"><mark style="background-color: blue;">Facebook</mark></a></li>
+            <li><a href="https://www.tiktok.com/" 1arget="_blank" rel="external"><strong>TikTok</strong></a></li>
+        </ul>
+    <h1>Usando links externos</h1>
+        <p>
+            Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a>. Para colocar o link da página 2, digite "Ctrl" + "espaço" e selecione a opção. <br>
+            Importante resaltar que as páginas devem estar na mesma pasta. 
+        </p>
+        <p>
+            Use os parâmetros "rel=next" e "rel=prev" dentro da tag &lt;a&gt; para indicar que a página do link da tag é a próxima ou a anterior. <br>
+            Visualmente nada muda, caso o parâmetro não seja inserido. Mas, há uma questão de semântica.
+        </p>
+        <p>
+            Sempre que você for colocar um link de um site patrocinado, use no parâmetro "rel=" a descrição "nofollow". <br>
+            Isso indicará ao Google que o site do link não deverá ser seguido, que você não dá um aval para esse conteúdo (mas o que isso significa?). Veja:
+        </p>
+        <p>
+            Esse site é patrocinado pelo <a href="https://www.google.com.br/" target="_blank" rel="nofollow">Google</a>
+        </p>
+        <p>
+            Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a>.
+        </p>
+        <p>
+            Quando colocamos links de páginas nossas, não é interessante abrí-los em outras guias. Assim, é melhor colocar no parâmetro "target=" "_self". Veja:
+            <a href="noticias/pag003.html" target="_self">Notícias</a>
+        </p>1
+    <h2>Links para download</h2>
+        <ul>
+            <p>
+                Para inserir um link para download, coloque o arquivo que você quer disponibilizar para download na mesma pasta da página index (pode até ser dentro de um outra pasta). Depois, procure no parâmetro "href" dentro da tag &lt;a&gt; o arquivo desejado, clicando em "Ctrl" + "espaço". Em seguida, digite o parâmetro "download" e complete com o nome do arquivo (ex: livropdf.pdf). Depois, digite o parâmetro "typ" ainda dentro da tag &lt;a&gt; e complete com o media type correto para o parâmetro (ver "iana media type" - PDF é "application/pdf" e  zip é "application/zip"). Veja a seguir:
+            </p>
+            <li><a href="livro/livropdf.pdf" download="livropdf.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+            <li><a href="livro/livroaudio.zip" download="livroauido.zip" type="application/zip">Livro compactado em Zip</a></li>
+        </ul>
+</body>
+</html>

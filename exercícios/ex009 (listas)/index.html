@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>
+        A tag &lt;ol&gt; serve para criarmos listas ordenadas. Após aberta, criamos a subtag &lt;li&gt; e então digitamos o texto. Devemos digitar &lt;li&gt; a cada ítem/linha da lista. Veja:
+    </p>
+    <ol>
+        <li>Acordar</li>
+        <li>Pentear os cabelos</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café da manhã</li>
+    </ol>
+    <p>
+        Caso, você precise inserir algum ítem no meio da lista, a numeração não será afetada.
+        <br>
+        Essa listas podem ser personalizadas. Após a abertura da tag &lt;ol&gt;, podemos digitar "type=", que uma caixa pop-up abrirá com algumas opções de ítens. Caso você queira que a lista comece em um ítem diferente do primeiro (como 1 ou a, por exemplo), digite após "type=", "start="! Veja: 
+    </p>
+        <ol type="1" start="5">
+            <li>Se trocar</li>
+            <li>Ir ao serviço</li>
+            <li>Sofrer</li>
+        </ol>
+    <p>Atenção: "start=" funciona apenas com "type=1", ou seja, com a lista de números!</p>
+    <h2>Listas Não-ordenadas</h2>
+    <p>
+        Nesse tipo de listas, marcadores de sequência não são necessários. Para fazê-la, use a tag &lt;ul&gt;. Veja:
+    </p>
+    <ul>
+        <li>Pão</li>
+        <li>Aeite</li>
+        <li>Cheiro verde</li>
+    </ul>
+    <p>
+        O ítem usado para marcar os ítens da lista também podem ser personalizados com "type=". As opções são "circle", "disk" e "square". Veja:
+    </p>
+    <ul type="circle"> 
+        <li>Pão</li>
+        <li>Azeite</li>
+        <li>Cheiro-verde</li>
+    </ul>
+    <h2>Comentários sobre códigos dentro de HTML</h2>
+    <p>
+        Para fazermos comentários sobre os códigos dentro do VisualCode Studio, bast digitar na frente do código que se deseja comentar a respeito: abre chave-angular, exclamação, dois hífens! Abra o VC Studio para ver o comentário escondido. <!--Olha meu comentário aqui-->
+    </p>
+    <h2>Minhas Linguagens Favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Visual Basic</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+            <ol type="a">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+    </ol>
+    <h2>Criando listas não ordenadas dentro de listas ordenadas</h2>
+    <h3>Jogos que mais joguei e personagens favoritos</h3>
+    <ol>
+        <li>Child of light</li>
+            <ul type="square">
+                <li>Aurora</li>
+                <li>Tristan</li>
+                <li>Alegra</li>
+            </ul>
+        <li>Super Mario 3D World</li>
+            <ul type="square">
+                <li>Peach</li>
+                <li>Mario</li>
+                <li>Toad</li>
+                <li>Luigi</li>
+            </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dt>Termo</dt>
+    <dd>Descrição</dd>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para criação do conteúdo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+</body>
+</html>

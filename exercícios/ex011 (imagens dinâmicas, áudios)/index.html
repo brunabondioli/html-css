@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinêmica</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegdor.
+    </p>
+    <img src="imagens/foto-g.png" alt="imagem inflexível">
+    <p>
+        Podemos ver que a imagem acima não é user friendly, já que é muito grande para o enquadramento da tela do computador e o usuário precisa ficar usando a barra de rolagem para vê-la por completo. Assim, o seu <em>bouncerate</em> pode ficar alto e o Google parar de indicar seu site para outras pessoas. O ideal portanto é usar outra tag, diferente de &lt;img&gt;. Veja a imagem a seguir:
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <p>
+        Usando a tag &lt;picture&gt; podemos criar imagens flexíveis, que alteram para outras versões suas de diferentes tamanhos. Para fazer isso, dentro da tag &lt;picture&gt;, abra a tag &lt;img&gt;. Complete o parâmetro <strong>source</strong> com a imagem de maior tamanho e escreva o texto alternativo. <br>
+        Em seguida, <strong>acima da tag &lt;img&gt;</strong>, digite a tag &lt;source:media:type&gt;. Complete "media" com "max-width: 1050", visto que 1050 px é um pouco maior que o tamanho da imagem "g", já selecionada na tag &lt;img&gt;. Complete o parâmetro "type" com "image/png". <br>
+        Repita o processo com a imagem pequena. A linha de código deverá ser digitada <strong>acima da linha anterior</strong> e deverá conter o tamanho um pouco maior do que o da imagem anterior também (750 px). <br>
+        Não se esqueça: a imagem em &lt;img&gt; deve ser a imagem padrão (ou a maior). Acima dessa imagem nas tags &lt;source&gt;, as imagens m e p, respeitando a hierarquia.
+    </p>
+    <h1>Reproduzindo Áudios</h1>
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5. <br>
+        Para isso, digite a tag &lt;audio&gt;, selecione o áudio desejado em "source" e complete a tag com o parâmetro "controls autoplay".
+    </p>
+    <audio src="media/dulce.mp3" controls autoplay></audio> 
+    <p>
+        Muitos navegadores não têm compatibilidade total com extensões de mídia como MP3. Nesse caso, é viável, dar outras opções de extensão para o usuário abrir. <br>
+        Para isso, abra a tag &lt;audio preload&gt; e complete o parâmetro "preload" com "metadata", insira também o parâmetro "autoplay controls". <br>
+        Dentro das tags de &lt;source src&gt;. Selecione o arquivo de música que deseja reproduzir primeiro, e complete "type" com o tipo de mídia usado: mp3 = "audio/mpeg", ogg = "audio/ogg" e wav = "audio/wav". <br>
+        Você também pode deixar um texto como opção caso nenhuma das mídias consigam ser reproduzidas. 
+    </p>
+    <audio preload="metadata" autoplay controls>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg">
+        <source src="media/guanacast-33.ogg" type="audio/ogg">
+        <source src="media/guanacast-33.wav" type="audio/wav">
+        <p>
+            Infelizmente, seu navegador não consegue reproduzir áudio. <a href="media/guanacast-33.mp3">Clique para baixar o arquivo MP3.</a>
+        </p>
+    </audio>
+    <p>
+        Por fim, evite arquivos "wav". Eles são muito pesados. 
+    </p>
+</body>
+</html>

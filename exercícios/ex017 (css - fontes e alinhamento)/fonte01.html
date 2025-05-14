@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'work Sans', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 100;
+            font-style: italic;
+            text-decoration: none;
+            /*font: italic light 1em 'work sans', sans-serif;*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <h2>Font-family</h2>
+    <p>
+        Web-safe font combinations. Pesquisar em W3schools. Esse site dirá quais fontes combinam entre si. <br>
+        Se você apenas colocar a característica da fonte "serif", o sistema escolherá uma fonte com essa característica. <br>
+        Uma dica, é colocar a característica da fonte por último na lista de escolhas.
+    </p>
+    <h2>Font-size</h2>
+    <p>
+        Tratando-se de fontes, temos tamanhos de medidas:
+        <ul type="square">
+        <li>ABSOLUTAS (cm, mm, in, px, pt, pc) <br>
+        Apesar de serem chamadas de absolutas, essas medidas podem variar de dispositivo para dispositivo, de navegador para navegador, etc. <br>
+        A W3C recomenda o uso da medida px.</li>
+        <li>
+            RELATIVAS (em, ex, rem, vw, vh, %) <br>
+            Traduzindo: em = altura do M maiúsculo, ex = altura do x minúsculo, rem = --, vw = view width = largura da tela / viewport, vh = altura da viewport. <br>
+        </li>
+        A W3C recomenda o uso da medida px e em. <br>
+        Atenção: 12pt = 16px = 1em!
+        </ul>
+    </p>
+    <h2>Font-weight</h2>
+    <p>
+        O peso da fonte pode ser determinado pelo estilo "font:weight", tendo como opções de escolha: normal, light, lighter, bold, bolder, outras. <br>
+        Pode também ser determinada por um valor numérico de 100 a 900. É importante ressaltar entretanto, que nem todas as fontes terão todos os valores. Uma pesquisa pode ajudar a saber se a fonte possui todas essas variações de peso. 
+    </p>
+    <h2>Font-style</h2>
+    <p>
+       Utilizamos esse estilo basicamente para deixar a fonte em itálico. Porém, nem sempre uma fonte vai permitir variações de peso e estilo (font-weight e font-style). 
+    </p>
+    <h2>Text-decoration</h2>
+    <p>
+        Utlizamos para sublinhar o texto. Para isso use o estilo text-decoration. 
+    </p>
+    <h2>Shorthand</h2>
+    <p>
+        Você pode condensar as 4 linhas relacionadas ao estilo da fonte com apenas uma linha de código, é isso que na programação chama-se "shorthand". <br>
+        A shorthand "font" deve seguir a ordem: font-style &gt; font-weight &gt; font-size &gt; font-family. Veja no cometário do estilo na parte "head".
+    </p>
+</body>
+</html>

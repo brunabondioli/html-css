@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript. <br>
+    A tag &lt;code&gt; pode ser usada para garantir fontes espaçadas. Como no exemplo acima! <br>
+    Mesmo com códigos de programação como Python ou JS, é necessário o uso da tag &lt;br&gt; ou &lt;p&gt; para quabrar a linha/criar um novo parágrafo. A tag &lt;code&gt; vai apenas espaçar as letras igualmente. <br>
+    A tag &lt;pre&gt;, entretanto, faz com que o texto obedeça as quebras de linha e espaços, de mesma maneira que o texto foi escrito no VisualCode. Incluindo tabulações, quebras de linha e espaços.
+    Veja no exemplo: </p>
+    <pre>
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+            print(f'O número {num} é PAR')
+            else:
+            print(f'O número {num} é ÍMPAR')
+            print("Fim do programa")
+        </code>
+    </pre>
+    <h2>Citações Simples</h2>
+   <p>Podemos criar citações simples em HTML com a tag &lt;q&gt;, como pode ser obeservado a seguir. <br> 
+    Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q> <br>
+    Mas qual a diferença entre usar a tag &lt;q&gt; e digitar aspas? Ao digitar a tag, você está dando para o texto dentro dela o sentido de quotation!</p>
+    <h2>Citações completas</h2>
+    <p>Para fazermos citações completas ou em blocos, podemos utilizar a tag &lt;blockquote&gt;, como segue abaixo. Além disso, dentro dessa tag, podemos colocar a informação "cite=" e colarmos o link do site de onde você tirou. Veja: <br>
+        Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite=https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/ZyJyDwAAQBAJ?hl=pt-BR&gbpv=0>
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <p>No front-end, não vai acontecer nada, mas para o código será importante (de alguma forma).</p>
+    <h2>Abreviações</h2>
+    <p>Para criar pop-ups para explicar abreviações em HTML, podemos usar a tag &lt;abbr&gt;. <br>
+    Dentro da tag, após "title="", escrevemos entre aspas o texto explicativo das abreviações que aparecerá em uma mini caixa pop-up! Veja: <br>
+    <pre>Estou estudando <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.
+    </pre>
+    </p>
+    <h2>Texto invertido</h2>
+    <p>
+    A tag &lt;bdo&gt; inverte o texto. Ao clicar na opão "bdo:r", o texto ficará invertido. Espelhado da direita para a esquerda. Veja: <br>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+    
+    <br>
+    Que tag inútil!
+    </p>
+</body>
+</html>

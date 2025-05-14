@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas = Fora do Google Fonts</title>
+    <style>
+        @font-face{
+            font-family: "bill";
+            src: url('bill.ttf') format('truetype');
+            font-weight: bold;
+            }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: "bill", Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fontes Externas (de outros sites, exigidas pelo cliente)</h1>
+    <p>
+        Antes de mais nada, verifique se a fonte do seu cliente possuem todos os glifos (acentos, maiúsculas, etc). Caso não tenha o e texto exija esses caractéres, avise o cliente que a fonte escolhida não será possível para a proposta do site. 
+    </p>    
+    <h2>Dafont</h2>
+    <p>
+        Existem vários sites que trazem fontes, assim como o Google Fonts, porém não são tão completos. Caso, você utilize esse site, baixe a fonte desejada e descompacte o arquivo extraindo tudo (formatos otf e ttf). Nem toda fonte trará as duas extensões. <br>
+        Copie os arquivos já descompactados para a pasta do projeto (ex018). <br>
+        Dentro da tag "style", crie uma regra/seletor "@font-face {}" e dentro do seletor, coloque as "categorias": font-family e src. <br>
+        Na categoria "src:", digite "url('nome_do_arquivo_da_fonte') format ('formato_desse_arquivo'). Se quiser colocar outro arquivo de outra extensão dessa mesma fonte, separe o final da linha com uma vírgula e recomece (veja código). 
+    </p>
+    <p>
+        <strong>IMPORTANTE: <br></strong>
+        Não se esqueça de digitar o nome que quiser dar a essa fonte externa logo após "@font-face" E CLARO dentro do seletor de "font-family" do "h1"!
+    </p>
+    <p>
+        Atenção: cada extesão de arquivo exige um "format" diferente. Veja os pares:
+        <ul type="square">
+            <li>otf = opentype</li>
+            <li>ttf = truetype</li>
+            <li>embedded-opentype</li>
+            <li>truetype-aat (Apple Advanced Typography)</li>
+            <li>svg</li>
+        </ul>
+    </p>
+</body>
+</html>
