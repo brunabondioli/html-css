@@ -12,6 +12,8 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; 
+            /*para fixar o cabeçalho da tabela é necessário configurar a posição como relativa*/
         }
 
         td, th{
@@ -35,9 +37,17 @@
             color: white;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray; 
+            /*configurações para congelar a linha de título da tabela (thead)*/
+        }
+
         tbody > tr:nth-child(2n){
             background-color: rgb(241, 240, 240);
-        } /*estilo para deixar a tabela zebrada, além de '2n', podemos usar 'odd' ou 'even'*/
+        } 
+        /*estilo para deixar a tabela zebrada, além de '2n', podemos usar 'odd' ou 'even'*/
     </style>
 </head>
 <body>
@@ -57,8 +67,10 @@
     <caption>População das Unidades Federativas do Brasil</caption>
     <thead>
         <tr>
-            <th scope="col">Estado</th> <!--scope não causa nenhum resultado visual, mas é semanticamente importante-->
-            <th escope="col" style="width: 100px";>População</th> <!--Configuração in-line de estilo-->
+            <th scope="col">Estado</th> 
+            <!--scope não causa nenhum resultado visual, mas é semanticamente importante-->
+            <th escope="col" style="width: 100px";>População</th> 
+            <!--Configuração in-line de estilo-->
         </tr>
     </thead>
     <tbody>
