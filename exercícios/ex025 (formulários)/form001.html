@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="get" autocomplete="off">
         <p>
             <label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome">
@@ -25,5 +25,16 @@
             <input type="submit" value="Enviar">
         </p>
     </form>
+    <p>
+        Existem 2 métodos para envio de formulários: o "get" e o "post". No método "get", os dados coletados ficam na URL ao enviá-los. Já no método do "post", os dados não aparecem na URL, mas aparecem no DevTools.
+    </p>
+    <p>
+        Para proteger os dados, é necessário criptografá-los através do protocolo 'https' (estudar posteriormente).
+    </p>
+    <p>
+        Mas, quando usar "get" e "post"? <br>
+        "GET" - dados não sensíveis (nome, peso, idade) ou quando você quer que a URL seja compartilhada. O máximo de tamanho é 3000 bytes (aprox. 3000 letras). <br>
+        "POST" - dados sensíveis (melhor https), dados maiores que 3000 bytes e para enviar arquivos.  
+    </p>
 </body>
 </html>
