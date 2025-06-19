@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span> 
+        <!--Agora, o site do Google para pegar ícones é o Google Fonts. Vá para a seção de icons e escolha o ícone desejado lá. 
+        A primeira tag <link> pode ser colada logo após a tag <title> no <head> do HTML. Em seguida, antes da tag de <menu>, insira a tag <span...> que fica em "Inserting the icon" no Google Fonts. -->
+        <menu id="itensmenu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -31,7 +35,22 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consequuntur expedita temporibus. Quam vitae voluptatum nemo pariatur dolorem debitis officiis ab, modi sint. Dignissimos corporis nam a omnis doloremque neque.
             </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat magni nisi pariatur ut maiores, illum sapiente non expedita sunt delectus nihil modi doloremque. Facilis nihil adipisci iste totam quo.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nam, temporibus ullam cumque sunt quaerat fugit corrupti. Id vero sed aut architecto sint! Ab eius laborum quo asperiores autem ducimus.
+            </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itensmenu.style.display == 'block') {
+                itensmenu.style.display = 'none'
+        } else {
+            itensmenu.style.display = 'block'
+        }
+        }
+    </script>
 </body>
 </html>
